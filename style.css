@@ -1,0 +1,380 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    background-color: var(--whiteCus);
+}
+
+
+/* root*/
+
+:root {
+    --main: #0d0d93;
+    --sec: #7262e4;
+    --acc: #17cef2;
+    --acc2: #b024d6;
+    --whiteCus: #eef4f5;
+    --blackCus: #020024;
+}
+
+.lightMode{
+ 
+    transition: 0.6s;
+}
+
+
+.text-main {
+    color: var(--main);
+
+}
+
+
+.text-sec {
+    color: var(--sec);
+}
+
+
+.text-acc {
+    color: var(--acc);
+}
+
+
+.text-acc2 {
+    color: var(--acc2);
+}
+
+
+.text-whiteCus {
+    color: var(--whiteCus);
+}
+
+
+.text-blackCus {
+    color: var(--blackCus);
+}
+
+
+.bg-main {
+    background-color: var(--main);
+}
+
+
+.bg-sec {
+    background-color: var(--sec);
+}
+
+
+.bg-acc {
+    background-color: var(--acc);
+}
+
+.bg-acc2 {
+    background-color: var(--acc2);
+}
+
+
+.bg-whiteCus {
+    background-color: var(--whiteCus);
+}
+
+
+.bg-blackCus {
+    background-color: var(--blackCus);
+}
+
+
+.border-main {
+    border: 2px solid var(--main);
+}
+
+
+.border-sec {
+    border: 2px solid var(--sec);
+}
+
+
+.border-acc {
+    border: 2px solid var(--acc);
+}
+
+
+.border-acc2 {
+    border: 2px solid var(--acc2);
+}
+
+
+.border-whiteCus {
+    border: 2px solid var(--whiteCus);
+}
+
+
+.border-blackCus {
+    border: 2px solid var(--blackCus);
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Gluten', cursive;  
+}
+
+
+*{
+    font-family: 'Karla', sans-serif;
+}
+
+
+/*header*/
+
+.headerCus {
+    height: 100vh;
+    width: 100vw;
+    background:url("/Media/Background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.title {
+    margin-top: 6%;
+    width: 280px;
+    margin-left: 400px;
+
+}
+
+
+.span1 {
+    text-decoration: underline;
+    animation-name: fast;
+    animation-duration: 3s;
+    position: absolute;
+}
+
+
+.span2 {
+    color: transparent;
+
+}
+
+
+@keyframes fast {
+
+    0% {
+        transform: translate(-600px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+
+}
+
+@media screen and (max-width: 900px){
+       
+    .title {
+            margin-top: 40%;
+        }
+
+        .headerCus{
+            background-position: 78%;
+        }
+        
+    }
+
+/* Navbar */
+
+
+.nav-link {
+    color: var(--acc2);
+}
+
+.nav-link:hover {
+    color: var(--whiteCus);
+}
+
+.btnCus{
+    color: var(--whiteCus);
+    border: 2px solid var(--sec);
+    background-color: var(--acc2);
+    transition: 0.4s;
+}
+
+.btnCus:hover {
+    color: var(--whiteCus);
+    border: 2px solid var(--whiteCus);
+    background-color: var(--acc2);
+}
+
+.logo {
+    width: 50px;
+} 
+
+#navIcon, #mainNavbar{
+    transition: 0.8s;
+    
+}
+
+
+/*sezione AOS + setInterval*/
+
+#person{
+    width: 40%;
+    background: url(Media/person.png);
+}
+
+.increment-numbers {
+    font-size: 90px;
+    font-weight: 700px;
+}
+
+/*swiper*/
+
+.swiper {
+    height: 350px;
+}
+
+.card-custom {
+
+    height: 200px;
+    width: 300px;  
+    border: 2px solid var(--main);
+    border-radius: 20px;
+    background-color: var(--blackCus);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* mouse enter & mouse leave */
+
+.col-custom{
+    border: 7px solid var(--sec);
+    padding: 20px;
+    color: var(--whiteCus);
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.col-custom:hover{
+    background-color: var(--whiteCus);
+    transform: scale(1.2);
+    color: var(--main);
+}
+
+/* annunci */
+
+.headerCus2 {
+    height: 30vh;
+    background: url('./Media/header2.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.announcements-card {
+    min-height: 300px;
+    border: 2px solid var(--blackCus);
+    background-color: var(--main);
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputNumber{
+    font-size: 40px;
+    color: var(--main);
+    font-weight: 800;
+}
+
+.card-head{
+    min-height: 50px;
+}
+
+.img-card-custom{
+    height: 100px;
+    border-radius:50%;
+}
+
+
+#scroller{
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 1;
+}
+
+
+#scroller2{
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    z-index: 1;
+}
+
+
+/* chi siamo */
+
+#containerCircle{
+    transition: 2s;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--whiteCus);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 2s;
+    
+}
+
+.opener{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--whiteCus);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+.moved{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--acc);
+    position: absolute;
+    background-color: var(--sec);
+    cursor: pointer;
+    transition: 1s;
+    /* background-image: url('./media/Antonio.png'); */
+   background-size: cover;
+} 
+
+
+
+.teacher-card{
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    border: 2px solid var(--whiteCus);
+    background-image: url(''); 
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0d0d93;
+    z-index: 1;
+}

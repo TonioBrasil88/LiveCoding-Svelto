@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Svelto.it</title>
+  </title>
+
+
+  <!-- cdn css Swiper-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!--cdn css AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+  <!-- CSS  custom-->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./Media/Logo.png" type="image/x-icon">
+
+
+</head>
+
+
+<body class="lightMode">
+
+  <!--inizio navbar-->
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid ">
+
+      <a id="logoWhite" class="navbar-brand" href="#">
+        <img class="logo" src="./Media/logoCelest.png" alt="">
+      </a>
+
+      <a id="logoCelest" class="navbar-brand d-none" href="#">
+        <img class="logo" src="./Media/logoWhite.png" alt="">
+      </a>
+
+      <button class="border-main bg-white p-2 rounded-4 d-md-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i id="navIcon" class="fa-solid fa-bag-shopping fa-1x text-main"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/annunci.html">Annunci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./chiSiamo.html">Chi Siamo?</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Trova un annuncio" aria-label="Cerca Annunci">
+          <button class="btn btnCus text-whiteCus" type="submit">Vai</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--fine navbar-->
+
+<!-- scroller -->
+
+<div id="scroller" class="d-none">
+  <a href="#">
+    <button class="btn btnCus">
+      <i class="fa-solid fa-circle-up fa-2x text-main"></i>
+    </button>
+  </a>
+</div>
+
+<!-- fine scroller-->
+
+
+<!-- inizio dark mode-->
+
+<div id="scroller2">
+  <button id="btnMode" class="btn btnCus">
+  <i id="iconBulbEmpty" class="fa-regular fa-lightbulb fa-2x d-none"></i>
+  <i id="iconBulbFull" class="fa-solid fa-lightbulb fa-2x"></i>
+  </button>
+</div>
+
+<!-- fine dark mode-->
+
+  <!--inizio header-->
+  <header class="container-fluid">
+    <div class="row headerCus">
+      <div class="col-12 d-flex flex-column aligne-items-center">
+        <img data-aos="fade-down" class="title" src="./Media/Svelto.png" alt="">
+        <p class="display-1 ms-0 ms-md-5 text-main">MORE
+          <span class="text-acc span1">fast</span>
+          <span class="span2">fast</span>
+          AS WE CAN
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!--fine header-->
+
+
+  <!--animate on scroll + set interval + interserction observer-->
+
+  <section class="container" id="nonCrederci">
+
+    <div class="row my-5">
+      <div class="col-12">
+        <h2 class="display-1 text-center text-main" data-aos="flip-right">
+          Numeri da <span class="text-blackCus"><em>urlo!</em></span></h2>
+      </div>
+    </div>
+
+    <div class="row my-2">
+
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" class="person"
+          src="./Media/person.png" alt="persona con lente di inrandimento">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <h2 id="numeriIntersection" class="text-center mt-5 text-blackCus">Un pò di numeri</h2>
+        
+        <p class="text-center mt-5 text-acc2"> 
+            <span id="firstSpan" class="increment-numbers d-block text-main">
+            0
+            </span> 
+            Clienti Soddisfatti
+        </p>
+
+        <p class="text-center text-acc2"> 
+            <span id="secondSpan" class="increment-numbers d-block text-main">
+                0
+            </span> 
+            Prodotti Venduti
+        </p>
+
+        <p class="text-center text-acc2"> 
+            <span id="thirdSpan" class="increment-numbers d-block text-main">
+                0
+            </span> 
+            Recensioni
+        </p>
+        
+    </div>
+
+
+    </div>
+
+  </section>
+
+  <!--fine animation scroll + set inteval + intersection observer-->
+
+  <!-- inizio sezione swiper -->
+
+  <section class="container my-5">
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-main display-2 ">Le nostre <span class="text-acc2">recensioni</span></h2>
+      </div>
+    </div>
+
+      <div class="row justify-content-center text-whiteCus">
+        <div class="col-12 col-md-8">
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </div>
+  </section>
+
+  <!-- fine sezione swiper -->
+
+
+  <!-- mouse enter e mouse leave-->
+
+  <section class="container-fluid" id="veloci">
+
+    <div class="row">
+      <div class="col-12">
+
+        <h2 class="display-2 text-center text-main my-2"> I più veloci<span class="text-acc2"> sul campo</span></h2>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-evenly bg-main py-5">
+
+      <div class="col-10 col-md-3 col-custom mb-4">
+        <i class="fa-solid fa-truck-fast fa-3x text-sec"></i>
+        <h3 class="text'text-whiteCus">Lorem Ipsum</h3>
+        <p class="text'text-whiteCus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dolore recusandae exercitationem, doloribus
+          tempora quaerat?</p>
+      </div>
+
+      <div class="col-8 col-md-3 col-custom text-center">
+        <i class="fa-solid fa-truck-fast fa-3x text-sec"></i>
+        <h3 class="text'text-whiteCus">Lorem Ipsum</h3>
+        <p class="text'text-whiteCus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dolore recusandae exercitationem, doloribus
+          tempora quaerat?</p>
+      </div>
+
+      <div class="col-10 col-md-3 col-custom text-end my-4">
+        <i class="fa-solid fa-truck-fast fa-3x text-sec"></i>
+        <h3 class="text'text-whiteCus">Lorem Ipsum</h3>
+        <p class="text'text-whiteCus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dolore recusandae exercitationem, doloribus
+          tempora quaerat?</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- fine mouse enter e mouse leave-->
+
+  <!--inizio ultimi annunci-->
+
+  <section class="container" id="ultimiAnn">
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center my-4"> Ultimi<span class="text-main"> annunci</span></h2>
+      </div>
+    </div>
+
+    <div class="row my-5 text-center" id="announcementsWrapper">
+
+    </div>
+  </section>
+
+
+<!-- Inizio Footer -->
+<footer class="container-fluid bg-main text-whiteCus">
+  <div class="row py-3">
+    <div class="col-6 col-md-2 my-1">
+      <h3>Quick Links</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#nonCrederci" class="nav-link p-0">Da non Crederci!</a></li>
+        <li class="nav-item mb-2"><a href="#nostreRece" class="nav-link p-0">Le nostre recensioni</a></li>
+        <li class="nav-item mb-2"><a href="#veloci" class="nav-link p-0">I più veloci sul campo</a></li>
+        <li class="nav-item mb-2"><a href="#ultimiAnn" class="nav-link p-0">Ultimi annunci</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-2 my-1">
+      <h3>About Presto</h3>
+      <ul class="nav flex-column">
+       <address>
+        <p>P.Iva 12345</p>
+        <p>Inirizzo: Via le mani dagli occhi</p>
+        <p>Tel: +39 2222111222</p>
+        <p>e-mail: miamail@mailmia.it</p>
+       </address>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-2 my-1">
+      <h3>Collaborazioni</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Disney</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Marvel</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tinder</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Dado Star</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Maccio Capatonda</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-5 offset-md-1 my-1">
+      <form>
+        <h5>Subscribe to our newsletter belli de zio</h5>
+        <p>Monthly digest of what's new and exciting from us.</p>
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+          <button class="btn bg-acc2 bt-Cus text-whiteCus" type="button">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center flex-column border-top pt-3">
+    <ul class="list-unstyled d-flex justify-content-end">
+      <p class="mx-5">© 2023 Company, Inc. All rights reserved to Brasile.</p>
+      <li><i class="fa-brands fa-instagram fa-2x mx-3"></i></li>
+      <li><i class="fa-brands fa-facebook fa-2x mx-3"></i></li>
+      <li><i class="fa-brands fa-tiktok fa-2x mx-3"></i></li>
+    </ul>
+  </div>
+</footer>
+<!-- Fine Footer -->
+
+
+  <!---js Swiper-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+  <!-- JS AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JS BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+  <!-- JS CUSTOM -->
+  <script src="./main.js"></script>
+
+  <!-- JS CUSTOM INTERNO -->
+  <script>
+
+    // inizializzazione AOS
+    AOS.init();
+
+    // creazione card e recensioni 
+
+    let advises = [
+
+      { name: 'Giovanni', quote: `Questo sito e fatto con i piedi`, vote: 1.5 },
+      { name: 'Valerio', quote: `Si vede che non capisci niente nelle lezioni`, vote: 2.5 },
+      { name: 'Riccardo', quote: `Bel sito fatto dal Brasile`, vote: 4.5 },
+      { name: 'Marco', quote: `Er mejo sito der Mondo`, vote: 5 },
+      { name: 'Luca', quote: `Mio cuggino cò trenamila lire lo faceva meglio`, vote: 2 },
+    ];
+
+    let swiperWrapper = document.querySelector('.swiper-wrapper');
+
+    advises.forEach((recensione) => {
+
+      let div = document.createElement('div');
+
+      div.classList.add('swiper-slide', 'd-flex', 'justify-content-center', 'align-items-center');
+
+      div.innerHTML = ` 
+  
+                  <div class="card-custom">
+                    <p class="h3">${recensione.name}</p>
+                    <p class="text-center">${recensione.quote}</p>
+
+                    <div class="d-flex"> 
+                      ${createStars(recensione.vote)}
+                    </div>
+
+                  </div>
+
+  
+    `
+
+      swiperWrapper.appendChild(div);
+
+    })
+
+    //creo le stelline
+
+    function createStars(fullStars) {
+
+      let final = '';
+
+      let fixed = Math.trunc(fullStars);
+
+      //console.log(fixed);
+
+
+
+      // stelle piene
+
+      for (let i = 0; i < fixed; i++) {
+
+        final += `<i class="fa-solid fa-star text-warning"></i>`;
+
+      }
+
+      // mezza STELLA
+
+      if (!Number.isInteger(fullStars)) {
+
+        final += `<i class="fa-solid fa-star-half-stroke text-warning"></i>`;
+
+        fixed += 1;
+
+      }
+
+      // creo stelle vuote
+      for (let i = 0; i < 5 - fixed; i++) {
+
+        final += `<i class="fa-regular fa-star text-warning"></i>`;
+
+      }
+
+      return final
+
+    }
+
+    //inizializzazione Swiper
+
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // AUTOPLAY
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        }
+      }
+      ,
+
+      // EFFECT
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 1,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+
+      // Pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      //   Navigation arrows
+      //   navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+    });
+
+  </script>
+
+</body>
+
+</html>
